@@ -5,24 +5,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int totalCnt = scanner.nextInt();
-        int h, w, n;
-        int x, y;
-        String roomNum;
-        for (int i = 0; i < totalCnt; i++) {
-            h = scanner.nextInt();
-            w = scanner.nextInt();
-            n = scanner.nextInt();
-            x = (n - 1) % h + 1;
-            y = (n - 1) / h + 1;
-            if (y < 10) {
-                roomNum = String.valueOf(x) + "0" + y;
+        String string = scanner.next();
+        String result = "";
+        char[] ca = string.toCharArray();
+        char ch = ca[0];
+        int count = 1;
+        for (int i = 1; i < ca.length; i++) {
+            if (ch == ca[i]) {
+                count++;
             } else {
-                roomNum = String.valueOf(x) + y;
+                result = result + ch + count;
+                ch = ca[i];
+                count = 1;
             }
-            System.out.println(roomNum);
         }
-
-
+        result = result + ch + count;
+        System.out.println(result);
     }
 }
