@@ -1,6 +1,7 @@
 package com.list;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
@@ -9,11 +10,12 @@ import java.util.StringTokenizer;
  * Created by magpiehoon on 2017. 3. 6..
  */
 public class N1158 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int n = 0;
         int m = 0;
+
         try {
             st = new StringTokenizer(br.readLine(), " ");
             n = Integer.parseInt(st.nextToken());

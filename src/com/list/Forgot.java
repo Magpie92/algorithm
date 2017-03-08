@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by magpiehoon on 2017. 3. 6..
  */
-public class N11052 {
+public class Forgot {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int totalCnt = scanner.nextInt();
