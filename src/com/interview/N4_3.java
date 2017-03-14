@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by magpiehoon on 2017. 2. 27..
+ * 두 문자열이 애너그램(anagram) 관계인지 판별하기
+ * 한 문자열의 글자의 순서만 바꿔서 다른 문자열이 된다면 이 둘은 애너그램 관계이다.
+ * "car"와 "arc"는 순서만 다르므로 애너그램관계이다.
  */
 public class N4_3 {
     public static void main(String[] args) {

@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by magpiehoon on 2017. 2. 27..
+ * 주어진 문자열에서 모든 문자가 유일한지 판단하기
+ * "abcd" -> true
+ * "abca" -> false
  */
 public class N4_2 {
     public static void main(String[] args) {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by magpiehoon on 2017. 2. 28..
+ * n비트의 모든 경우의 수를 출력
  */
 public class N5_3 {
     public static void main(String[] args) {
