@@ -10,10 +10,7 @@ public class N5_4 {
         ArrayList<String> arrayList = permRec("123", new boolean["123".length()], "", new ArrayList<>());
     }
 
-    public static ArrayList<String> permRec(String s,
-                                            boolean[] pick,
-                                            String perm,
-                                            ArrayList<String> result) {
+    public static ArrayList<String> permRec(String s, boolean[] pick, String perm, ArrayList<String> result) {
 
         if (perm.length() == s.length()) {
             result.add(perm);
